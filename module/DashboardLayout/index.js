@@ -2,8 +2,8 @@ import * as React from 'react';
 import * as ReactDOM from 'react-dom/client';
 import { StyledEngineProvider } from '@mui/material/styles';
 import Demo from '/components/Header/header';
-import Main from '/components/Main/main';
 import Footer from '/components/Footer/footer';
+import AuthForm from '/src/containers/AuthForm';
 
 ReactDOM.createRoot(document.querySelector("#header")).render(
   <React.StrictMode>
@@ -16,7 +16,7 @@ ReactDOM.createRoot(document.querySelector("#header")).render(
 ReactDOM.createRoot(document.querySelector("#main")).render(
   <React.StrictMode>
     <StyledEngineProvider injectFirst>
-      <Main />
+      <AuthForm />
     </StyledEngineProvider>
   </React.StrictMode>
 );
